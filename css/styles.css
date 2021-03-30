@@ -124,6 +124,13 @@ ul {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
@@ -187,6 +194,7 @@ ul {
 }
 
 .advantage-title {
+  margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -264,6 +272,7 @@ ul {
 }
 
 .team-description {
+  margin-bottom: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -271,6 +280,37 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 206px;
+  height: 44px;
+}
+
+.social-list_item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-list_icon {
+  fill: #afb1b8;
+}
+
+.social-list_item-link:hover,
+.social-list_item-link:focus {
+  background-color: #2196f3;
+}
+.social-list_item-link:hover .social-list_icon,
+.social-list_item-link:focus .social-list_icon {
+  fill: #ffffff;
 }
 
 /* footer */
