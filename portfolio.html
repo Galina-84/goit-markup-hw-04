@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +32,7 @@
                 </ul>
             </nav>
             <ul class="contacts-list list">
-                <li class="contact-item">
+                <li class="contact-item_email">
                     <a href="#" class="email-link_img link">
                         <svg class="email_icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-email"></use>
@@ -41,7 +40,7 @@
                     </a>
                     <a class="email-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="contact-item">
+                <li class="contact-item_tel">
                     <a href="#" class="tel-link_img link">
                         <svg class="tel_icon" width="10" height="16">
                             <use href="./images/icons.svg#icon-tel"></use>
@@ -80,7 +79,9 @@
             <div class="container">
                 <ul class="portfolio-list list">
                     <li class="portfolio-item">
-                        <img class="portfoio-list-img" src="./images.portfolio/технокряк.jpg" alt="ноутбук с сайтом" width="370" height="255">
+                        <a href="" class="portfolio-link">
+                            <img class="portfolio-list-img" src="./images.portfolio/технокряк.jpg" alt="ноутбук с сайтом" width="370" height="255">
+                        </a>
                         <div class="portfolio-card-content">
                             <h2 class="img-title">Технокряк</h2>
                             <p class="img-description">Веб-сайт</p>
@@ -146,26 +147,63 @@
             </div>
         </section>
     </main>
+    <!-- footer -->
     <footer class="footer">
-        <!-- footer -->
-        <div class="container">
-            <nav class="navigation">
-                <a class="logo-link-footer link" lang="en" href="index.html">
-                    <span class="logo-link-web">Web</span>Studio</a>
-            </nav>
-            <address class="address">
-                <ul class="contacts-list-footer list">
-                    <li class="contact-item">
-                        <a class="address-link link" href="">г. Киев, пр-т Леси Украинки, 26 </a>
+        <div class="container-footer">
+            <div class="adress-links_footer">
+                <nav class="navigation">
+                    <a class="logo-link-footer link" lang="en" href="index.html">
+                        <span class="logo-link-web">Web</span>
+                        Studio
+                    </a>
+                </nav>
+                <address class="address">
+                    <ul class="contacts-list-footer list">
+                        <li class="contact-item-footer">
+                            <a class="address-link link" href="">г. Киев, пр-т Леси Украинки, 26 </a>
+                        </li>
+                        <li class="contact-item-footer">
+                            <a class="mail-link-footer link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="contact-item-footer">
+                            <a class="tel-link-footer link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="social-links_footer">
+                <h5 class="social-footer_title">присоединяйтесь</h5>
+                <ul class="social-list_footer list">
+                    <li class="social-list-footer_item">
+                        <a href="#" class="item-link item-link_instagram">
+                            <svg class="social-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="contact-item">
-                        <a class="mail-link-footer link" href="mailto:info@example.com">info@example.com</a>
+                    <li class="social-list-footer_item">
+                        <a href="#" class="item-link item-link_twitter">
+                            <svg class="social_icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="contact-item">
-                        <a class="tel-link-footer link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    <li class="social-list-footer_item">
+                        <a href="#" class="item-link item-link_facebook">
+                            <svg class="social_icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list-footer_item">
+                        <a href="#" class="item-link item-link_linkedin">
+                            <svg class="social_icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>
